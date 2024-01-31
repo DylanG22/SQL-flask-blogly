@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <img src="{{user.profile_pic}}" alt="Profile Picture" id="profile_pic" width="100px"> 
+    <h4>{{user.fullname()}}</h4>
+    <form action="/delete/{{user.id}}" method="POST">
+    <button>Delete</button>
+    </form>
+    <form action="/edit/{{user.id}}" >
+        <button>Edit</button>
+    </form>
+
+</body>
+</html>

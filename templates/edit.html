@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+
+</head>
+<body>
+    <h1>Edit {{user.fullname}}'s profile</h1>
+    <form action="/edit/{{user.id}}" method="POST">
+        <label for="first">First Name:</label>
+        <input type="text" name="first_name" id="first" value="{{user.first_name}}">
+        <label for="last">Last Name:</label>
+        <input type="text" name="last_name" id="last" value="{{user.last_name}}">
+        <label for="pp">Profile Picture:</label>
+        <input type="text" name="profile_pic" id="pp" value="{{user.profile_pic}}">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
