@@ -12,7 +12,7 @@ def seed_db():
     User.query.delete()
 
     user1 = User(first_name='Spike',last_name='Lee')
-    user2 = User(first_name='Dylan',last_name='Gooch')
+    user2 = User(first_name='Brad',last_name='Pitt')
     user3 = User(first_name='Christopher',last_name='Nolan')
     user4 = User(first_name='Ryan',last_name='Gosling')
 
